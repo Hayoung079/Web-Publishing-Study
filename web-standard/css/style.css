@@ -24,44 +24,32 @@
 
 /* 레이아웃 */
 #wrap {
-  width: 100%;
 }
 
 #header {
-  width: 100%;
   height: 325px;
   background: url(../img/header_bg.jpg) center top repeat-x;
 }
 
 #contents {
-  width: 100%;
-  height: 800px;
-  background-color: #222;
 }
 
 #footer {
-  width: 100%;
   height: 200px;
   background-color: #333;
 }
 
 /* 컨텐츠 레이아웃 */
 #cont-nav {
-  width: 100%;
-  height: 200px;
-  background-color: #333;
+  background-color: #f6fdff;
 }
 
 #cont-title {
-  width: 100%;
-  height: 200px;
-  background-color: #444;
+  background-color: #eaf7fd;
 }
 
 #cont-banner {
-  width: 100%;
-  height: 200px;
-  background-color: #555;
+  background-color: #dceff7;
 }
 
 #cont-content {
@@ -160,4 +148,124 @@
 
 #header .header-icon a.icon4:hover {
   background-position: -60px -180px;
+}
+
+/* 전체 메뉴 */
+.nav {
+  padding: 30px 0;
+  overflow: hidden;
+}
+
+.nav > div {
+  float: left;
+  width: 40%;
+}
+
+.nav > div:last-child {
+  width: 20%;
+}
+
+.nav > div h3 {
+  margin-bottom: 4px;
+  font-size: 18px;
+  color: #25a2d0;
+}
+
+.nav > div ol {
+  overflow: hidden;
+}
+
+.nav > div ol li {
+  float: left;
+  width: 50%;
+}
+
+.nav > div:last-child ol li {
+  width: 100%;
+}
+
+.nav > div ol li a:hover {
+  text-decoration: underline;
+}
+
+/* 타이틀 */
+.title {
+  position: relative;
+}
+
+.title h2 {
+  padding: 5px 0;
+  font-family: "Nanum Brush Script", cursive;
+  font-size: 40px;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #2c94c4;
+}
+
+.title .btn {
+  position: absolute;
+  top: 5px;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  background: url(../img/icon.png) no-repeat 0 -600px;
+}
+
+/* 전체 배너 */
+.banner {
+  position: relative;
+  padding: 24px 0 20px;
+}
+
+.banner a.prev {
+  position: absolute;
+  left: -80px;
+  top: 60px;
+  width: 43px;
+  height: 43px;
+  background: #ccc;
+  background: url(../img/icon.png) no-repeat -150px 0;
+}
+
+.banner a.next {
+  position: absolute;
+  right: -80px;
+  top: 60px;
+  width: 43px;
+  height: 43px;
+  background: #ccc;
+  background: url(../img/icon.png) no-repeat -150px -43px;
+}
+
+.banner a.prev:hover {
+  background-position: -193px 0;
+}
+
+.banner a.next:hover {
+  background-position: -193px -43px;
+}
+
+.banner ul {
+  overflow: hidden;
+}
+
+.banner ul li {
+  float: left;
+  width: 330px;
+}
+
+.banner ul li:last-child {
+  text-align: right;
+}
+
+.banner ul li:nth-child(2) {
+  text-align: center;
+}
+
+.banner ul li img {
+  border: 4px solid #dcdcdc;
+}
+
+.banner ul li img:hover {
+  border-color: #98bcdc;
 }
